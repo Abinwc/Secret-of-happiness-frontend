@@ -1,0 +1,128 @@
+<html lang="en">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <style>
+        .slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 5.5px;
+            border-radius: 5px;
+            background: #5b5050;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: rgb(206, 201, 201);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class=" w-[100%] h-[100%] bg-amber-50">
+        <div class="header flex">
+            <div class="text-3xl mt-[3vh] ml-[40vw]">SECRET &nbsp OF &nbsp
+                HAPPINESS</div>
+            <div class="w-[5vw] h-[4vh]"> <img
+                    src="happy-abstract-people-logo-happiness-family-vector-26887885.jpg1.jpg">
+            </div>
+        </div>
+
+        <div class="w-[70%] h-[85%] bg-cyan-100  ml-[20vw] mt-[5vh] rounded-[25px]">
+            <div class="w-[80%] h-[98%] ml-[8vw] border-solid border-2 border-cyan-100">
+                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh] flex">
+                    <div class="w-[2vw] h-[2vh] ml-[4vw]"><img src="Screenshot 2022-08-10 135604.png"></div>
+                    <div class="ml-[2vw] text-2xl">Family</div>
+                    <div class="mt-4 ml-[4vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
+                            class="slider" id="myRange">
+
+                    </div>
+                    <div class="text-xl ml-[5vw]">(Out of 10)</div>
+                </div>
+                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh] flex">
+                    <div class="w-[2vw] h-[1vh] ml-[4vw]"><img src="fitness1.PNG"></div>
+                    <div class="ml-[1.5vw] text-2xl">Fitness</div>
+                    <div class="mt-4 ml-[4vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
+                            class="slider" id="myRange">
+
+                    </div>
+                </div>
+                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh] flex">
+                    <div class="w-[3vw] h-[2vh] mt-[-8] ml-[3.7vw]"><img src="faith1.PNG"></div>
+                    <div class="ml-[1.5vw] text-2xl">Faith</div>
+                    <div class="mt-4 ml-[4.6vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
+                            class="slider" id="myRange">
+
+                    </div>
+
+                </div>
+                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh]  flex">
+                    <div class="w-[3vw] h-[2vh] mt-[-8] ml-[3.7vw]"><img src="work.PNG"></div>
+                    <div class="ml-[1.5vw] text-2xl">Field</div>
+                    <div class="mt-4 ml-[4.7vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
+                            class="slider" id="myRange">
+
+                    </div>
+                </div>
+                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh]  flex">
+                    <div class="w-[3vw] h-[2vh] mt-[-8] ml-[3.7vw]"><img src="finance.png"></div>
+                    <div class="ml-[1.5vw] text-2xl">Finance</div>
+                    <div class="mt-4 ml-[2.8vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
+                            class="slider" id="myRange">
+
+                    </div>
+                </div>
+                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh]  flex">
+                    <div class="w-[3vw] h-[2vh] mt-[-8] ml-[3.7vw]"><img src="fun.png"></div>
+                    <div class="ml-[1.5vw] text-2xl">Fun</div>
+                    <div class="mt-4 ml-[5.3vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
+                            class="slider" id="myRange">
+
+                    </div>
+                </div>
+                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh] flex">
+                    <div class="w-[3vw] h-[2vh] mt-[-8] ml-[3.7vw]"><img src="friends.png"></div>
+                    <div class="ml-[1.5vw] text-2xl">Friends</div>
+                    <div class="mt-4 ml-[3.1vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
+                            class="slider" id="myRange">
+
+                    </div>
+
+                </div>
+                <form class="ml-[20vw] mt-[5vh]"><input class=" w-[7vw] h-[5vh] bg-gray-300 rounded-lg border-black"
+                        type="button" value="SUBMIT" onclick="msg()">
+                </form>
+                <form class="ml-[42vw] mt-[-6vh]"><input class=" w-[10vw] h-[5vh] bg-gray-300 rounded-lg border-black"
+                        type="button" value="DASHBOARD" onclick="msg()">
+                    <div class="mt-[-5.5vh] ml-[-1vh]"><img src="ARROW.png"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>
