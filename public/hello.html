@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/tailwind.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-
+    <link href='https://fonts.googleapis.com/css?family=Irish Grover' rel='stylesheet'>
     <style>
         .slider {
             -webkit-appearance: none;
@@ -34,6 +34,28 @@
             border-radius: 50%;
             background: rgb(206, 201, 201);
             cursor: pointer;
+            outline: #8f978f solid 2px;
+
+        }
+
+        .font {
+            font-family: 'Irish Grover';
+            font-size: 22px;
+        }
+
+        .heading {
+            font-family: 'font-family:Gabriela';
+
+        }
+
+        .font1 {
+            font-family: 'Grandstander', cursive;
+
+
+        }
+
+        p {
+            margin-left: 40px;
         }
     </style>
 
@@ -42,7 +64,7 @@
 <body>
     <div class=" w-[100%] h-[100%] bg-amber-50">
         <div class="header flex">
-            <div class="text-3xl mt-[3vh] ml-[40vw]">SECRET &nbsp OF &nbsp
+            <div class="heading text-4xl mt-[3vh] ml-[40vw]">SECRET &nbsp OF &nbsp
                 HAPPINESS</div>
             <div class="w-[5vw] h-[4vh]"> <img
                     src="happy-abstract-people-logo-happiness-family-vector-26887885.jpg1.jpg">
@@ -51,78 +73,148 @@
 
         <div class="w-[70%] h-[85%] bg-cyan-100  ml-[20vw] mt-[5vh] rounded-[25px]">
             <div class="w-[80%] h-[98%] ml-[8vw] border-solid border-2 border-cyan-100">
-                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh] flex">
+                <div class="w-[49vw] h-[6vh] ml-[6vw] mt-[4vh]  flex">
                     <div class="w-[2vw] h-[2vh] ml-[4vw]"><img src="Screenshot 2022-08-10 135604.png"></div>
-                    <div class="ml-[2vw] text-2xl">Family</div>
-                    <div class="mt-4 ml-[4vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
-                            class="slider" id="myRange">
+                    <div class=" font ml-[2vw] text-2xl ">Family</div>
+                    <div class="mt-4 ml-[4vw] w-[15vw]"><input class="slider outline outline-offset-2" type="range"
+                            min="1" max="10" value="5" class="sliderVal" id="myRange">
+
+
 
                     </div>
+                    <p> <span id="demo"></span></p>
                     <div class="text-xl ml-[5vw]">(Out of 10)</div>
                 </div>
                 <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh] flex">
                     <div class="w-[2vw] h-[1vh] ml-[4vw]"><img src="fitness1.png"></div>
-                    <div class="ml-[1.5vw] text-2xl">Fitness</div>
-                    <div class="mt-4 ml-[4vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
-                            class="slider" id="myRange">
+                    <div class="font ml-[1.5vw] text-2xl">Fitness</div>
+                    <div class="mt-4 ml-[4vw] w-[15vw]"><input class="slider outline outline-offset-2" type="range"
+                            min="1" max="10" value="5" class="slider" id="myRange1">
+
 
                     </div>
+                    <p><span id="demo1"></span></p>
                 </div>
-                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh] flex">
+                <div class="w-[43vw] h-[6vh] ml-[6.5vw] mt-[4vh] flex">
                     <div class="w-[3vw] h-[2vh] mt-[-8] ml-[3.7vw]"><img src="faith1.png"></div>
-                    <div class="ml-[1.5vw] text-2xl">Faith</div>
-                    <div class="mt-4 ml-[4.6vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
-                            class="slider" id="myRange">
+                    <div class="font ml-[1.5vw] text-2xl">Faith</div>
+                    <div class="mt-4 ml-[4.6vw] w-[15vw]"><input class="slider outline outline-offset-2" type="range"
+                            min="1" max="10" value="5" class="slider" id="myRange2">
+
 
                     </div>
+                    <p> <span id="demo2"></span></p>
 
                 </div>
-                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh]  flex">
+                <div class="w-[43vw] h-[6vh] ml-[6.5vw] mt-[4vh]  flex">
                     <div class="w-[3vw] h-[2vh] mt-[-8] ml-[3.7vw]"><img src="work.png">
                     </div>
-                    <div class="ml-[1.5vw] text-2xl">Field</div>
-                    <div class="mt-4 ml-[4.7vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
-                            class="slider" id="myRange">
+                    <div class="font ml-[1.5vw] text-2xl">Field</div>
+                    <div class="mt-4 ml-[4.7vw] w-[15vw]"><input class="slider outline outline-offset-2" type="range"
+                            min="1" max="10" value="5" class="slider" id="myRange3">
+
 
                     </div>
+                    <p><span id="demo3"></span></p>
                 </div>
-                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh]  flex">
+                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh] flex">
                     <div class="w-[3vw] h-[2vh] mt-[-8] ml-[3.7vw]"><img src="finance.png"></div>
-                    <div class="ml-[1.5vw] text-2xl">Finance</div>
-                    <div class="mt-4 ml-[2.8vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
-                            class="slider" id="myRange">
+                    <div class="font ml-[1.5vw] text-2xl">Finance</div>
+                    <div class="mt-4 ml-[2.8vw] w-[15vw] flex "><input class="slider outline outline-offset-2"
+                            type="range" min="1" max="10" value="5" class="slider" id="myRange4">
+
 
                     </div>
+                    <p> <span id="demo4"></span></p>
                 </div>
-                <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh]  flex">
+                <div class="w-[45vw] h-[6vh] ml-[6.7vw] mt-[4vh]  flex">
                     <div class="w-[3vw] h-[2vh] mt-[-8] ml-[3.7vw]"><img src="fun.png"></div>
-                    <div class="ml-[1.5vw] text-2xl">Fun</div>
-                    <div class="mt-4 ml-[5.3vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
-                            class="slider" id="myRange">
+                    <div class="font ml-[1.5vw] text-2xl">Fun</div>
+                    <div class="mt-4 ml-[5.3vw] w-[15vw]"><input class="slider outline outline-offset-2" type="range"
+                            min="1" max="10" value="5" class="slider" id="myRange5">
+
 
                     </div>
+                    <p> <span id="demo5"></span></p>
                 </div>
                 <div class="w-[43vw] h-[6vh] ml-[6vw] mt-[4vh] flex">
                     <div class="w-[3vw] h-[2vh] mt-[-8] ml-[3.7vw]"><img src="friends.png"></div>
-                    <div class="ml-[1.5vw] text-2xl">Friends</div>
+                    <div class="font ml-[1.5vw] text-2xl">Friends</div>
                     <div class="mt-4 ml-[3.1vw] w-[15vw]"><input class="slider" type="range" min="1" max="10" value="5"
-                            class="slider" id="myRange">
+                            class="slider" id="myRange6">
+
 
                     </div>
+                    <p> <span id="demo6"></span></p>
 
                 </div>
-                <form class="ml-[20vw] mt-[5vh]"><input class=" w-[7vw] h-[5vh] bg-gray-300 rounded-lg border-black"
+                <form class="ml-[20vw] mt-[5vh] "><input
+                        class="font1 w-[7vw] h-[5vh] hover:bg-gray-300 bg-gray-200 rounded-lg  outline-gray-400 drop-shadow-lg outline outline-offset-2"
                         type="button" value="SUBMIT" onclick="msg()">
                 </form>
-                <form class="ml-[42vw] mt-[-6vh]"><input class=" w-[10vw] h-[5vh] bg-gray-300 rounded-lg border-black"
+                <form class="ml-[42vw] mt-[-6vh] "><input
+                        class="font1 w-[10vw] h-[5vh] hover:bg-gray-300 bg-gray-200 outline-gray-400 rounded-lg outline outline-offset-2"
                         type="button" value="DASHBOARD" onclick="msg()">
-                    <div class="mt-[-5.5vh] ml-[-1vh]"><img src="ARROW.png"></div>
+                    <div class="mt-[-5.6vh] ml-[-2.5vh]"><img src="ARROW.png"></div>
                 </form>
             </div>
         </div>
     </div>
 
     </div>
+    <script>
+        let slider = document.getElementById("myRange");
+        let output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+
+        let slider1 = document.getElementById("myRange1");
+        let output1 = document.getElementById("demo1");
+        output1.innerHTML = slider1.value;
+
+        slider1.oninput = function () {
+            output1.innerHTML = this.value;
+        }
+        let slider2 = document.getElementById("myRange2");
+        let output2 = document.getElementById("demo2");
+        output2.innerHTML = slider2.value;
+
+        slider2.oninput = function () {
+            output2.innerHTML = this.value;
+        }
+        let slider3 = document.getElementById("myRange3");
+        let output3 = document.getElementById("demo3");
+        output3.innerHTML = slider3.value;
+
+        slider3.oninput = function () {
+            output3.innerHTML = this.value;
+        }
+        let slider4 = document.getElementById("myRange4");
+        let output4 = document.getElementById("demo4");
+        output4.innerHTML = slider4.value;
+
+        slider4.oninput = function () {
+            output4.innerHTML = this.value;
+        }
+        let slider5 = document.getElementById("myRange5");
+        let output5 = document.getElementById("demo5");
+        output5.innerHTML = slider5.value;
+
+        slider5.oninput = function () {
+            output5.innerHTML = this.value;
+        }
+        let slider6 = document.getElementById("myRange6");
+        let output6 = document.getElementById("demo6");
+        output6.innerHTML = slider6.value;
+
+        slider6.oninput = function () {
+            output6.innerHTML = this.value;
+        }
+    </script>
+
 
 </body>
 
