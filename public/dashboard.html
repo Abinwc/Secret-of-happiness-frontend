@@ -30,11 +30,22 @@
         th {
 
             font-family: 'Grandstander', cursive;
+
         }
 
         .font {
             font-family: 'Irish Grover';
-            font-size: 22px;
+            font-size: 20px;
+        }
+
+        .font1 {
+            font-family: 'Grandstander', cursive;
+            font-size: 20px;
+        }
+
+        .button {
+            font-size: 19px;
+            font-family: 'Grandstander', cursive;
         }
     </style>
 
@@ -51,7 +62,7 @@
         </div class="box-2">
         <div class="w-[80%] h-[85%] bg-cyan-100 rounded-[25px] m-auto mt-[5vh]">
             <div class="w-[100%] h-[55%] m-auto justify-center flex items-center">
-                <table class=" font text-center justify-center  ">
+                <table class=" font1 text-center justify-center  ">
                     <thead>
                         <tr>
                             <th>Sl.</th>
@@ -99,11 +110,10 @@
                 <div class="">AREAS OF FOCUS : FIELD,FAITH,FUN</div>
                 <div class="">AVERAGE:5</div>
             </div>
-            <form class=" font mt-[6vh] ml-[2vw] "><input
-                    class="font1 w-[10vw] h-[5vh] hover:bg-gray-300 bg-gray-200 outline-gray-400 rounded-lg outline outline-offset-2"
-                    type="button" value="HOME" onclick="window.location.href='hello.html';">
-                <div class="mt-[-5.6vh]"><img class="rotate-180" src="ARROW.png"></div>
-            </form>
+
+            <button type="button" onclick="window.location.href = 'hello.html';"
+                class="button w-[10vw] h-[5vh] ml-[4vw] hover:bg-gray-300 bg-gray-200 outline-gray-400 rounded-lg outline outline2"><i
+                    class="fa-solid fa-caret-left"></i> &nbsp HOME</button>
         </div>
 
     </div>

@@ -57,6 +57,11 @@
         p {
             margin-left: 40px;
         }
+
+        .button1 {
+            font-size: 19px;
+            font-family: 'Grandstander', cursive;
+        }
     </style>
 
 </head>
@@ -148,14 +153,13 @@
                     <p> <span id="demo6"></span></p>
 
                 </div>
-                <div class="ml-[20vw] mt-[5vh] "><input
-                        class="font1 w-[7vw] h-[5vh] hover:bg-gray-300 bg-gray-200 rounded-lg  outline-gray-400 drop-shadow-lg outline outline-offset-2"
+                <div class="ml-[20vw] mt-[5vh] flex justify-between "><input
+                        class="font1 w-[7vw] h-[5vh] hover:bg-gray-300 bg-gray-200 rounded-lg  outline-gray-400 drop-shadow-lg outline outline2"
                         type="button" value="SUBMIT" onclick="msg()">
-                </div>
-                <div class="ml-[42vw] mt-[-6vh] "><input
-                        class="font1 w-[10vw] h-[5vh] hover:bg-gray-300 bg-gray-200 outline-gray-400 rounded-lg outline outline-offset-2"
-                        type="button" value="DASHBOARD" onclick="window.location.href='dashboard.html';">
-                    <div class="mt-[-5.6vh] ml-[-2.5vh]"><img src="ARROW.png"></div>
+
+                    <button type="button" onclick="window.location.href = 'dashboard.html';"
+                        class="button1 w-[10vw] h-[5vh] hover:bg-gray-300 bg-gray-200 outline-gray-400 rounded-lg outline outline2"><i
+                            class="fa-solid fa-caret-right"></i> &nbsp DASHBOARD</button>
                 </div>
             </div>
         </div>
