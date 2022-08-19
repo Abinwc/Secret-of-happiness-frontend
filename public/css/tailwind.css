@@ -599,6 +599,10 @@ video {
   margin-top: 1rem;
 }
 
+.ml-\[4\.2vw\] {
+  margin-left: 4.2vw;
+}
+
 .ml-\[5vw\] {
   margin-left: 5vw;
 }
@@ -615,8 +619,8 @@ video {
   margin-left: 3.7vw;
 }
 
-.ml-\[4\.6vw\] {
-  margin-left: 4.6vw;
+.ml-\[4\.8vw\] {
+  margin-left: 4.8vw;
 }
 
 .ml-\[4\.7vw\] {
@@ -627,20 +631,16 @@ video {
   margin-left: 5.8vw;
 }
 
-.ml-\[2\.8vw\] {
-  margin-left: 2.8vw;
+.ml-\[3vw\] {
+  margin-left: 3vw;
 }
 
 .ml-\[5\.9vw\] {
   margin-left: 5.9vw;
 }
 
-.ml-\[5\.3vw\] {
-  margin-left: 5.3vw;
-}
-
-.ml-\[3\.1vw\] {
-  margin-left: 3.1vw;
+.ml-\[5\.5vw\] {
+  margin-left: 5.5vw;
 }
 
 .flex {
