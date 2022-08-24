@@ -71,6 +71,7 @@
         <div class="w-[80%] h-[85%] bg-cyan-100 rounded-[25px] m-auto mt-[5vh]">
             <div class="w-[100%] h-[55%] m-auto justify-center flex items-center">
                 <table class=" font1 text-center justify-center  ">
+                    <p id="demo"></p>
                     <thead>
                         <tr>
                             <th>Sl.</th>
@@ -84,8 +85,8 @@
                             <th>FRIENDS</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="datas">
+                        <!-- <tr>
                             <td>1</td>
                             <td>09/08/2022
                                 <br> 06:49pm
@@ -109,7 +110,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                        </tr>
+                        </tr> -->
 
                     </tbody>
                 </table>
@@ -127,6 +128,37 @@
     </div>
 
     </div>
+
 </body>
+<script>
+    var a = [{
+        sno: 1,
+        date: '22-08-2022',
+        family: 3,
+        fun: 3,
+        friends: 3,
+        field: 2,
+        finance: 5,
+        faith: 3,
+        fitness: 4,
+    },
+
+    ];
+
+
+    function Insert_Data() {
+        var table = document.getElementById("datas");
+        table.innerHTML = "";
+        var tr = "";
+        a.forEach(x => {
+            tr += '<tr>';
+            tr += '<td>' + x.sno + '</td>' + '<td>' + x.date + '</td>' + '<td>' + x.family + '</td>' + '<td>' + x.fun + '</td>' + '<td>' + x.friends + '</td>' + '<td>' + x.field + '</td>' + '<td>' + x.finance + '</td>' + '<td>' + x.faith + '</td>' + '<td>' + x.fitness + '</td>'
+            tr += '</tr>'
+
+        })
+        table.innerHTML += tr;
+
+    } Insert_Data();
+</script>
 
 </html>
