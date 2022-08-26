@@ -113,7 +113,9 @@
                         </tr> -->
 
                     </tbody>
+
                 </table>
+                <div id="json"></div>
             </div>
             <div class="font w-[80%] h-[15%]  m-auto mt-[5vh] flex justify-between">
                 <div class="">AREAS OF FOCUS : FIELD,FAITH,FUN</div>
@@ -143,6 +145,7 @@
         fitness: 4,
     },
 
+
     ];
 
 
@@ -159,6 +162,20 @@
         table.innerHTML += tr;
 
     } Insert_Data();
+
+
+    const apiUrl = ('https://secret-of-happiness69.herokuapp.com')
+
+    // document.getElementById('json').innerHTML = JSON.stringify(await response.json())
+
+    async function fetchApi(url) {
+        const response = await fetch(url)
+        const span = document.getElementById('json')
+        span.innerHTML = JSON.stringify(await response.json())
+    }
+    fetchApi(apiUrl)
+
+
 </script>
 
 </html>
